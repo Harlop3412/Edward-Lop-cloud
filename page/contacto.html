@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bloque favicon-->
+    <link rel="shortcut icon" href="../multimedia/favicon-32x32(1).png" type="image/x-icon">
+    <!--bloque tipografía google-fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!--bloque animacion libreria textos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--bloque estilo css-->
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+
+    <header class="header gradiente__header">
+
+        <!--fila menú superior-->
+        <nav class="header__navbar">
+            <ul class="">
+                <li><a href="../index.html"> HOME</a></li>
+                <li><a href="./servicios.html"> SERVICIOS</a></li>
+                <li><a href="#"> CONTACTO</a></li>
+                <li><a href="./ubicacion.html"> UBICACIÓN</a></li>
+                <li><a href="./Misión y Visión.html#mision"> MISIÓN</a></li>
+                <li><a href="./Misión y Visión.html#vision">VISIÓN</a></li>
+                <li><a href="./Objetivos.html"> OBJETIVOS</a></li>
+            </ul>
+        </nav>
+        <!--Fin fila menú-->
+
+        <!--fila logo + nombre + sologan-->
+        <section class="header__section-flex">
+
+            <!--fila logo -->
+            <div class="header__logo rotar__logo">
+                <a href="../index.html"><img src="../multimedia/logo.png" alt="logo"></a>
+            </div>
+
+            <!--fila nombre + slogan -->
+            <div class="header__nombreslogan">
+                <h1 class="animacion"> MOBILE ANIMALS SPA</h1>
+                <h3 class="animacion"> Salud y belleza animal</h3>
+            </div>
+
+        </section>
+        <!--Fin fila logo + nombre + sologan-->
+
+    </header>
+
+
+    <main class="main gradiente__main">
+
+        <!--sección formularios-->
+        <section class="contacto__formulario main__textoleft">
+
+            <form action="" >
+                <fieldset class="gradiente__form">
+                    <legend>Datos de contacto</legend>
+                    <!--Caja de nombre-->
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="ingresa tu nombre" value="" required
+                        autofocus><br><br>
+                    <!--Caja de apellidos-->
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="ingresa tu apellido" value=""><br><br>
+                    <!--Caja de edad number-->
+                    <label for="edad">Edad</label>
+                    <input type="number" placeholder="Ingresa tu edad" value="" name="edad"><br><br>
+                    <!--Caja de correo email-->
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="Digita tu email" value=""
+                        required><br><br>
+                    <!--textarea-->
+                    <label for="comentario">Escribe algo sobre ti</label>
+                    <br>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10" maxlength="190" minlength="10"
+                        value=""></textarea>
+                    <br><br>
+                    <!--radio-->
+                    <label for="genero">Género</label> <br>
+                    <input type="radio" name="genero" value="masculino"> Masculino <br>
+                    <input type="radio" name="genero" value="femenino"> Femenino
+                    <br><br>
+                    <!--menú desplegable-->
+                    <select name="" id="">
+                        <option value="">Selecciona la talla de tu mascota</option>
+                        <option value="s">Small menor a 10 KG</option>
+                        <option value="m">Medium de 10 a 20 kg</option>
+                        <option value="l">large de 20 a 35 KG</option>
+                        <option value="x">x-large mayor a 35 kg</option>
+                        <option value="g">Es un gato</option>
+                    </select> <br><br>
+                    <!--checkbox-->
+                    Acepto términos y condiciones <input type="checkbox" name="terminos" value="acepto"><br><br>
+                    <!--botones-->
+                    <input type="submit" value="Enviar el formulario">
+                    <input type="reset" value="Resetear">
+
+                </fieldset>
+            </form>
+        </section>
+        <!--Fin sección formularios-->
+
+        <!--bloque tabla contacto equipo-->
+        <article class="contacto__tabla--separacion">
+            <section class="contacto__tabla">
+                <table class="">
+                    <h3 class="animate__animated animate__backInDown animate__infinite animate__slower">Contacta a nuestro equipo</h3>
+                    <thead>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Área</th>
+                        <th>Contacto</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Liliana</td>
+                            <td>Palacios</td>
+                            <td>Recepción</td>
+                            <td>57 3113207212</td>
+                        </tr>
+                        <tr>
+                            <td>Anderson</td>
+                            <td>Jimenez</td>
+                            <td>Hospitalización</td>
+                            <td>57 3205421545</td>
+                        </tr>
+                        <tr>
+                            <td>Juan</td>
+                            <td>Lopez</td>
+                            <td>Laboratorio</td>
+                            <td>57 3147852514</td>
+                        </tr>
+                        <tr>
+                            <td>Angélica</td>
+                            <td>Ramirez</td>
+                            <td>Estética</td>
+                            <td>57 3187852142</td>
+                        </tr>
+                        <tr>
+                            <td>Luis</td>
+                            <td>Ospina</td>
+                            <td>Domicilios</td>
+                            <td>57 3503874525</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+        <!--Fin bloque tabla contacto equipo-->
+
+    </main>
+
+    <footer class="footer">
+
+        <!--fila logo + nombre + slogan + menu inferior + formulario + redes-->
+        <section class="footer__section-flex">
+
+            <!--bloque logo-->
+            <div class="footer__logo">
+                <a href="../index.html"><img src="../multimedia/logo.png" alt="logo"></a>
+            </div>
+
+            <!--bloque nombre + slogan-->
+            <div class="footer__nombreslogan">
+                <h1> MOBILE ANIMALS SPA</h1>
+                <h3> Salud y belleza animal</h3>
+            </div>
+
+            <!--bloque menu inferior-->
+            <nav class="footer__navbar">
+                <ul class="">
+                    <li><a href="../index.html"> HOME</a></li>
+                    <li><a href="./servicios.html"> SERVICIOS</a></li>
+                    <li><a href="#"> CONTACTO</a></li>
+                    <li><a href="./ubicacion.html"> UBICACIÓN</a></li>
+
+                </ul>
+            </nav>
+
+            <nav class="footer__navbar">
+                <ul class="">
+                    <li><a href="./Misión y Visión.html#mision"> MISIÓN</a></li>
+                    <li><a href="./Misión y Visión.html#vision">VISIÓN</a></li>
+                    <li><a href="./Objetivos.html"> OBJETIVOS</a></li>
+                </ul>
+            </nav>
+            <!--Fin bloque menu inferior-->
+
+            <!--bloque formulario-->
+            <div class="footer__formulario">
+                <form action="">
+                    <label for="correo" > Recibe información para el cuidado de tu mascota</label><br>
+                    <input type="email" id="correo" name="correo" placeholder="Ingresa tu email" class="boton">
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+
+            <!--bloque redes-->
+            <div class="footer__redes">
+                <a href="#"><img src="../multimedia/facebook.jpg" alt="facebook"></a>
+                <a href="#"><img src="../multimedia/whatpsapp.jpg" alt="whatpsapp"></a>
+            </div>
+
+        </section>
+        <!--Fin fila logo + nombre + slogan + menu inferior + formulario + redes-->
+
+    </footer>
+
+</body>
+
+</html>
