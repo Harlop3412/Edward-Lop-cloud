@@ -10,9 +10,7 @@
     <!--bloque tipografía google-fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
-    <!--bloque animacion libreria textos-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!--bloque estilo css-->
     <link rel="stylesheet" href="../CSS/estilos.css">
     <title>Contacto</title>
@@ -20,11 +18,11 @@
 
 <body>
 
-    <header class="header gradiente__header">
+    <header class="header">
 
         <!--fila menú superior-->
         <nav class="header__navbar">
-            <ul class="">
+            <ul class="menu__sup">
                 <li><a href="../index.html"> HOME</a></li>
                 <li><a href="./servicios.html"> SERVICIOS</a></li>
                 <li><a href="#"> CONTACTO</a></li>
@@ -37,17 +35,17 @@
         <!--Fin fila menú-->
 
         <!--fila logo + nombre + sologan-->
-        <section class="header__section-flex">
+        <section class="header__section">
 
             <!--fila logo -->
-            <div class="header__logo rotar__logo">
+            <div class="header__logo">
                 <a href="../index.html"><img src="../multimedia/logo.png" alt="logo"></a>
             </div>
 
             <!--fila nombre + slogan -->
             <div class="header__nombreslogan">
-                <h1 class="animacion"> MOBILE ANIMALS SPA</h1>
-                <h3 class="animacion"> Salud y belleza animal</h3>
+                <h1> MOBILE ANIMALS SPA</h1>
+                <h3> Salud y belleza animal</h3>
             </div>
 
         </section>
@@ -56,12 +54,12 @@
     </header>
 
 
-    <main class="main gradiente__main">
+    <main class="main main__contacto-flex">
 
         <!--sección formularios-->
-        <section class="contacto__formulario main__textoleft">
+        <section class="contacto__formulario">
 
-            <form action="">
+            <form action="" class="">
                 <fieldset class="gradiente__form">
                     <legend>Datos de contacto</legend>
                     <!--Caja de nombre-->
@@ -70,14 +68,15 @@
                         autofocus class="boton"><br><br>
                     <!--Caja de apellidos-->
                     <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="ingresa tu apellido" value="" class="boton"><br><br>
+                    <input type="text" name="apellido" id="apellido" placeholder="ingresa tu apellido" value=""
+                        class="boton"><br><br>
                     <!--Caja de edad number-->
                     <label for="edad">Edad</label>
                     <input type="number" placeholder="Ingresa tu edad" value="" name="edad" class="boton"><br><br>
                     <!--Caja de correo email-->
                     <label for="correo">Correo electrónico</label>
-                    <input type="email" id="correo" name="correo" placeholder="Digita tu email" value=""
-                        required class="boton"><br><br>
+                    <input type="email" id="correo" name="correo" placeholder="Digita tu email" value="" required
+                        class="boton"><br><br>
                     <!--textarea-->
                     <label for="comentario">Escribe algo sobre ti</label>
                     <br>
@@ -86,7 +85,7 @@
                     <br><br>
                     <!--radio-->
                     <label for="genero">Género</label> <br>
-                    <input type="radio" name="genero" value="masculino" > Masculino <br>
+                    <input type="radio" name="genero" value="masculino"> Masculino <br>
                     <input type="radio" name="genero" value="femenino"> Femenino
                     <br><br>
                     <!--menú desplegable-->
@@ -106,15 +105,18 @@
 
                 </fieldset>
             </form>
+
         </section>
         <!--Fin sección formularios-->
 
         <!--bloque tabla contacto equipo-->
-        <article class="contacto__tabla--separacion">
-            <section class="contacto__tabla">
-                <table class="">
-                    <h3 class="animate__animated animate__backInDown animate__infinite animate__slower">Contacta a
-                        nuestro equipo</h3>
+        <article class="">
+            <section class="contacto__tabla-flex ">
+                <div>
+                    <h3>Contacta a nuestro equipo</h3>
+                </div>
+                <table class="tabla">
+
                     <thead>
                         <th>Nombre</th>
                         <th>Apellido</th>
@@ -163,43 +165,45 @@
     <footer class="footer">
 
         <!--fila logo + nombre + slogan + menu inferior + formulario + redes-->
-        <section class="footer__section-flex">
 
-            <!--bloque logo-->
-            <div class="footer__logo">
-                <a href="../index.html"><img src="../multimedia/logo.png" alt="logo"></a>
-            </div>
 
-            <!--bloque nombre + slogan-->
-            <div class="footer__nombreslogan">
-                <h1> MOBILE ANIMALS SPA</h1>
-                <h3> Salud y belleza animal</h3>
-            </div>
+        <!--bloque logo-->
+        <div class="footer__logo">
+            <a href="../index.html"><img src="../multimedia/logo.png" alt="logo"></a>
+        </div>
 
-            <!--bloque menu inferior-->
-            <nav class="footer__navbar">
-                <ul class="">
-                    <li><a href="../index.html"> HOME</a></li>
-                    <li><a href="./servicios.html"> SERVICIOS</a></li>
-                    <li><a href="#"> CONTACTO</a></li>
-                    <li><a href="./ubicacion.html"> UBICACIÓN</a></li>
+        <!--bloque nombre + slogan-->
+        <div class="footer__nombreslogan">
+            <h1> MOBILE ANIMALS SPA</h1>
+            <h3> Salud y belleza animal</h3>
+        </div>
 
-                </ul>
-            </nav>
+        <!--bloque menu inferior-->
+        <nav class="footer__navbar">
+            <ul class="">
+                <li><a href="../index.html"> HOME</a></li>
+                <li><a href="./servicios.html"> SERVICIOS</a></li>
+                <li><a href="#"> CONTACTO</a></li>
+                <li><a href="./ubicacion.html"> UBICACIÓN</a></li>
 
-            <nav class="footer__navbar">
-                <ul class="">
-                    <li><a href="./Misión y Visión.html#mision"> MISIÓN</a></li>
-                    <li><a href="./Misión y Visión.html#vision">VISIÓN</a></li>
-                    <li><a href="./Objetivos.html"> OBJETIVOS</a></li>
-                </ul>
-            </nav>
-            <!--Fin bloque menu inferior-->
+            </ul>
+        </nav>
 
+        <nav class="footer__navbar">
+            <ul class="">
+                <li><a href="./Misión y Visión.html#mision"> MISIÓN</a></li>
+                <li><a href="./Misión y Visión.html#vision">VISIÓN</a></li>
+                <li><a href="./Objetivos.html"> OBJETIVOS</a></li>
+            </ul>
+        </nav>
+        <!--Fin bloque menu inferior-->
+        <section class="">
             <!--bloque formulario-->
             <div class="footer__formulario">
                 <form action="">
-                    <label for="correo"> Recibe información para el cuidado de tu mascota</label><br>
+                    <label for="correo">
+                        <h3> Recibe información para el cuidado de tu mascota</h3>
+                    </label><br>
                     <input type="email" id="correo" name="correo" placeholder="Ingresa tu email" class="boton">
                     <input type="submit" value="Enviar">
                 </form>

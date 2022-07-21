@@ -1,0 +1,1283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*gird general*/
+.grid {
+    display: grid;
+    grid-template-areas:
+        "nav "
+        "header "
+        "main "
+        "footer "
+    ;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 3fr;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    height: 100vh;
+}
+
+
+/*grid nav*/
+.nav {
+    grid-area: nav;
+    width: 100%;
+}
+
+/*grid header*/
+.header__grid {
+    grid-area: header;
+}
+
+/*-------gird main---------*/
+.main__grid {
+    grid-area: main;
+}
+
+/*grid footer*/
+.footer__grid {
+    grid-area: footer;
+}
+
+
+
+/*-----------------HEADER-----------------*/
+
+.header {
+    background-image: url(../multimedia/fondo_header.jpg);
+    background-color: rgb(43, 43, 219);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 15rem;
+    width: 100%;
+    margin: 5px;
+    padding: 1rem;
+    border: double 5px white;
+}
+
+/*-----navbar--------*/
+
+.header__navbar ul {
+    padding: 1rem;
+    list-style-type: none;
+    text-align: center;
+}
+
+.header__navbar li {
+    display: inline-block;
+}
+
+.header__navbar a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: .5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: ridge 5px white;
+}
+
+/* logo + nombre + slogan flex*/
+.header__nombreslogan {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+}
+
+.header__logo img {
+    width: 12.5rem;
+}
+
+.header__nav-flex {
+    display: flex;
+    flex-direction: column
+}
+
+.header__section-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+}
+
+
+/*----------------------------MAIN---------------------------*/
+.main__flex {
+    display: flex;
+}
+
+.main {
+    background-image: url(../multimedia/fondo_main.jpg);
+    background-color: rgb(140, 140, 155);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    padding: 1rem;
+    border: double 5px white;
+    color: black;
+    font-weight: bold;
+}
+
+/*---ancho general caja de textos, separacion derecha de caja sobre caja imagenes, float
+a la izq para que contenedor de imgenes suba a la derecha*/
+.main__textoleft {
+    width: 100%;
+    height: 100%;
+    padding-right: 1rem;
+
+}
+
+/*contenedor de textos ancho dentro de caja de textos*/
+.main__articulo p {
+    text-align: justify;
+    width: 100%;
+}
+
+/*bordes cajas de texto*/
+.main__articulo--resaltado {
+    border: solid white 2px;
+}
+
+/*padding en interior cajas de texto*/
+.main__articulo--bottom {
+    padding: 2.5rem;
+
+}
+
+/*separacion superior cajas de texto*/
+.main__articulo--separacion {
+    padding-top: 2rem;
+}
+
+/*separacion entre borde superior e inferior de imagenes*/
+.main_imagen--separación2 {
+    padding-top: 2rem;
+}
+
+/*--ancho contenedor de imagenes*/
+.main__imagen img {
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+    /* position: relative; */
+    border: 3px solid white;
+
+}
+
+/*----- "ubicacion" imagen titulo iframe------*/
+.main__ubicacion img {
+    width: 72rem;
+    margin-left: 4rem;
+    margin-top: 3rem;
+
+}
+
+.main__titulo h2 {
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+
+}
+
+
+.main__imagen2 iframe {
+    width: 72rem;
+    padding-top: 1rem;
+    margin-left: 4rem;
+}
+
+/*----- FIn "ubicacion" imagen titulo iframe------*/
+
+/*----- "Contacto" formulario tabla_contactos------*/
+
+
+.contacto__formulario form {
+    /* display:flex;
+    flex-direction: column; */
+    width: 20rem;
+    position: relative;
+    left: 13rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    
+
+}
+
+.contacto__formulario fieldset {
+    border: solid rgb(14, 13, 13) 3px;
+}
+
+.contacto__tabla h3 {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+}
+
+.contacto__tabla--separacion {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+th {
+    border: black 3px solid;
+    margin: 2px;
+    text-align: center;
+    padding: 1rem;
+}
+
+td {
+    border: black 3px solid;
+    margin: 1px;
+    text-align: center;
+    padding: .5rem;
+}
+
+/*--"servicios" "mision-vision" "objetivos" mediadas y espaceado de contenedores--*/
+
+.main__contenido {
+    width: 50%;
+    height: 100%;
+
+}
+
+.main__imagen3 img {
+    width: 100%;
+    margin-bottom: 3rem;
+    margin-top: 6rem;
+}
+
+.main__espacio {
+    margin-left: 5rem;
+}
+
+.main__espacio--texto {
+    margin-top: 6rem;
+}
+
+.main__espacio--texto2 {
+    margin-top: .5rem;
+    margin-right: 3rem;
+}
+
+.main__espacio--texto3 {
+    margin-top: 7rem;
+    margin-right: 3rem;
+}
+
+.main__espacio--lista {
+    line-height: 2;
+    list-style-type: square;
+    list-style-position: inside;
+    padding: 1rem;
+}
+
+.main__imagen4 img {
+    width: 90%;
+    margin-top: 1rem;
+
+}
+
+/*---------------------------FOOTER--------------------------------*/
+
+.footer {
+    background-image: url(../multimedia/fondo_footer.jpg);
+    background-color: rgb(13, 145, 197);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 8rem;
+    width: 100%;
+    margin: 5px;
+    padding: 1rem;
+    border: double 5px white;
+
+}
+
+.footer__logo img {
+    width: 12.5rem;
+}
+
+.footer__nombreslogan {
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer__navbar ul {
+    list-style-type: none;
+}
+
+.footer__navbar a {
+    text-decoration: none;
+    text-transform: lowercase;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+.footer__redes img {
+    width: 2rem;
+    padding-top: 1rem;
+}
+
+.footer__formulario form {
+    color: black;
+    font-weight: bold;
+}
+
+.footer__section-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+/*---gradientes - transforaciones---*/
+
+.gradiente__header{
+    background-image: linear-gradient( rgb(119, 119, 167), rgb(10, 111, 136), rgb(75, 108, 180) );
+}
+
+.gradiente__main{
+    background-image: radial-gradient( blue, rgb(11, 197, 243), rgb(176, 241, 241) );
+}
+
+.gradiente__form{
+    background-image: radial-gradient( rgb(8, 159, 143),rgb(100, 201, 135),rgb(42, 72, 88),rgb(57, 180, 142));
+}
+.rotar__logo{
+    transform: skew(0deg,0deg);
+    /*-- transform: rotate(10deg); --*/
+}
+.rotar__logo img:hover{
+    transform: skew(10deg,10deg);
+}
+
+a:hover{
+    border: solid 5px rgba(10, 80, 172, 0.582);
+}
+
+.boton:hover{
+    border: dotted 5px blue ;
+}
+
+/*----animaciones-manual--*/
+
+.animacion{
+    color: black;
+    /* --font-size: 2rem; -- */
+    /*nombre*/
+    animation-name: nombre-slogan;
+    /*veces a ejecutar*/
+    animation-iteration-count: infinite;
+    /*duracion*/
+    animation-duration: 8s;
+    /*tiempo que hasta que carga*/
+    animation-delay: 6s;
+}
+@keyframes nombre-slogan {
+    0%{
+        color: black;
+        font-size: 2rem;
+    }
+    25%{
+        color: blue;
+        transform: rotate(30deg);
+        /* --font-size: 2.5rem;-- */
+    }
+    50%{
+        color: white;
+        transform: rotate(-30deg);
+        /* --font-size: 3rem;-- */
+    }
+    75%{
+        color: cornflowerblue;
+        /*-- font-size: 2.5rem;-- */
+    }
+    100%{
+        color: black;
+        /*-- font-size: 2rem; --*/
+    }
+}
+
+
+/*-------movil-------*/
+
+@media(min-width: 1px) and (max-width: 480px) {
+
+    /*header*/
+
+    .header {
+        height: 16.5rem;
+    }
+
+    .header__nav-flex {
+        flex-wrap: wrap;
+    }
+
+    .main__flex {
+        flex-direction: column;
+    }
+
+    .header__section-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__navbar a {
+        font-size: .8rem;
+        font-weight: normal;
+        border: none;
+        padding: 0;
+        color: black;
+        font-weight: bold;
+    }
+
+    .header__nombreslogan {
+        font-size: 1rem;
+    }
+
+    /*------------main-------------*/
+
+    .main__textoleft {
+
+        font-size: 1rem;
+    }
+
+    .main__articulo--bottom {
+        padding: .8rem;
+        margin-left: 1.4rem;
+    }
+
+    .main__articulo {
+        width: 100%;
+    }
+
+    .main__articulo--resaltado {
+        border: solid black 2px;
+    }
+
+    .main__articulo--resaltado p {
+        font-weight: bold;
+        font-size: medium;
+    }
+
+    .main__imagen {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main__imagen img {
+        border: solid 2px black
+    }
+
+    /*servicios*/
+
+    .main__contenido {
+        width: 100%;
+    }
+
+    .main__espacio {
+        margin-left: .4rem;
+    }
+
+    .main__espacio--texto {
+        margin-top: 1rem;
+    }
+
+    .main__espacio--texto2 {
+        margin-right: 1rem;
+    }
+
+    .main__imagen3 img {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    /*contacto*/
+
+    .contacto__formulario form {
+        left: 3.5rem;
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+    }
+
+    /* .contacto__tabla--separacion {
+        padding-top: 0rem;
+        padding-bottom: 2rem;
+        
+    } */
+
+    /*ubicación*/
+
+    .main__ubicacion img {
+        width: 100%;
+        margin-left: .2rem;
+        margin-top: .5rem;
+    
+    }
+    
+    .main__titulo h2 {
+        text-align: center;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        padding-bottom: .5rem;
+        padding-top: .5rem;
+    
+    }
+    
+    .main__imagen2 iframe {
+        width: 100%;
+        height: auto;
+        padding-top: .5rem;
+        margin-left: .2rem;
+        
+    }
+
+    /*mision - vision */
+
+    .main__espacio--texto3 {
+        margin-top: 0rem;
+        margin-right: 1rem;
+    }
+
+    .main__imagen4 img {
+        width: 100%;
+        margin-top: 1rem;
+    
+    }
+
+    /*--------footer------------*/
+    .footer__nombreslogan {
+        display: none;
+    }
+
+    /* .footer__redes{
+        margin-left: 4rem;
+    } */
+
+    .footer__navbar li {
+        display: inline-block;
+    }
+
+    .footer__navbar a {
+        display: none;
+    }
+
+    .footer {
+        height: 9rem;
+    }
+
+}
+
+
+/*------tabletas pequeñas--mobiles grandes----------------------------------*/
+ 
+@media(min-width: 481px) and (max-width: 600px) {
+
+    /*header*/
+
+    .header {
+        height: 16.5rem;
+    }
+
+    .header__nav-flex {
+        flex-wrap: wrap;
+    }
+
+    .main__flex {
+        flex-direction: column;
+    }
+
+    .header__section-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__navbar a {
+        font-size: .8rem;
+        font-weight: normal;
+        border: none;
+        padding: 0;
+        color: black;
+        font-weight: bold;
+    }
+
+    .header__nombreslogan {
+        font-size: 1rem;
+    }
+
+    /*------------main-------------*/
+
+    .main__textoleft {
+
+        font-size: 1rem;
+    }
+
+    .main__articulo--bottom {
+        padding: .8rem;
+        margin-left: 1.4rem;
+    }
+
+    .main__articulo {
+        width: 100%;
+    }
+
+    .main__articulo--resaltado {
+        border: solid black 2px;
+    }
+
+    .main__articulo--resaltado p {
+        font-weight: bold;
+        font-size: medium;
+    }
+
+    .main__imagen {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main__imagen img {
+        border: solid 2px black
+    }
+
+    /*servicios*/
+
+    .main__contenido {
+        width: 100%;
+    }
+
+    .main__espacio {
+        margin-left: .4rem;
+    }
+
+    .main__espacio--texto {
+        margin-top: 1rem;
+    }
+
+    .main__espacio--texto2 {
+        margin-right: 1rem;
+    }
+
+    .main__imagen3 img {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    /*contacto*/
+
+    .contacto__formulario form {
+        left: 3.5rem;
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+        margin-left: 4rem;
+    }
+
+    .contacto__tabla--separacion {
+        padding-top: 0rem;
+        padding-bottom: 2rem;
+        margin-left: 2rem;
+    }
+
+    /*ubicación*/
+
+    .main__ubicacion img {
+        width: 100%;
+        margin-left: .2rem;
+        margin-top: .5rem;
+    
+    }
+    
+    .main__titulo h2 {
+        text-align: center;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        padding-bottom: .5rem;
+        padding-top: .5rem;
+    
+    }
+    
+    .main__imagen2 iframe {
+        width: 100%;
+        height: auto;
+        padding-top: .5rem;
+        margin-left: .2rem;
+        
+    }
+
+    /*mision - vision */
+
+    .main__espacio--texto3 {
+        margin-top: 0rem;
+        margin-right: 1rem;
+    }
+
+    .main__imagen4 img {
+        width: 100%;
+        margin-top: 1rem;
+    
+    }
+
+    /*--------footer------------*/
+    .footer__nombreslogan {
+        display: none;
+    }
+
+    /* .footer__redes{
+        margin-left: 4rem;
+    } */
+
+    .footer__navbar li {
+        display: inline-block;
+    }
+
+    .footer__navbar a {
+        display: none;
+    }
+
+    .footer {
+        height: 9rem;
+    }
+
+}
+
+/*--mobiles con display grande--*/
+
+@media(min-width: 601px) and (max-width: 768px) {
+
+    /*header*/
+
+    .header {
+        height: 16.5rem;
+    }
+
+    .header__nav-flex {
+        flex-wrap: wrap;
+    }
+
+    .main__flex {
+        flex-direction: column;
+    }
+
+    .header__section-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__navbar a {
+        font-size: .8rem;
+        font-weight: normal;
+        border: none;
+        padding: 0;
+        color: black;
+        font-weight: bold;
+    }
+
+    .header__nombreslogan {
+        font-size: 1rem;
+    }
+
+    /*------------main-------------*/
+
+    .main__textoleft {
+
+        font-size: 1rem;
+    }
+
+    .main__articulo--bottom {
+        padding: .8rem;
+        margin-left: 1.4rem;
+    }
+
+    .main__articulo {
+        width: 100%;
+    }
+
+    .main__articulo--resaltado {
+        border: solid black 2px;
+    }
+
+    .main__articulo--resaltado p {
+        font-weight: bold;
+        font-size: medium;
+    }
+
+    .main__imagen {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main__imagen img {
+        border: solid 2px black
+    }
+
+    /*servicios*/
+
+    .main__contenido {
+        width: 100%;
+    }
+
+    .main__espacio {
+        margin-left: .4rem;
+    }
+
+    .main__espacio--texto {
+        margin-top: 1rem;
+    }
+
+    .main__espacio--texto2 {
+        margin-right: 1rem;
+    }
+
+    .main__imagen3 img {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    /*contacto*/
+
+    .contacto__formulario form {
+        left: 3.5rem;
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+        margin-left: 10rem;
+    }
+
+    .contacto__tabla--separacion {
+        padding-top: 0rem;
+        padding-bottom: 2rem;
+        margin-left: 9rem;
+    }
+
+    /*ubicación*/
+
+    .main__ubicacion img {
+        width: 100%;
+        margin-left: .2rem;
+        margin-top: .5rem;
+    
+    }
+    
+    .main__titulo h2 {
+        text-align: center;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        padding-bottom: .5rem;
+        padding-top: .5rem;
+    
+    }
+    
+    .main__imagen2 iframe {
+        width: 100%;
+        height: auto;
+        padding-top: .5rem;
+        margin-left: .2rem;
+        
+    }
+
+    /*mision - vision */
+
+    .main__espacio--texto3 {
+        margin-top: 0rem;
+        margin-right: 1rem;
+    }
+
+    .main__imagen4 img {
+        width: 100%;
+        margin-top: 1rem;
+    
+    }
+
+    /*--------footer------------*/
+    .footer__nombreslogan {
+        display: none;
+    }
+
+    /* .footer__redes{
+        margin-left: 4rem;
+    } */
+
+    .footer__navbar li {
+        display: inline-block;
+    }
+
+    .footer__navbar a {
+        display: none;
+    }
+
+    .footer {
+        height: 9rem;
+    }
+
+}
+
+
+/*------tabletas grandes-------------------------*/
+ 
+@media(min-width: 769px) and (max-width: 992px) {
+
+ /*header*/
+
+ .header {
+    height: 16.5rem;
+}
+
+.header__nav-flex {
+    flex-wrap: wrap;
+}
+
+.main__flex {
+    flex-direction: column;
+}
+
+.header__section-flex {
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__navbar a {
+    font-size: .8rem;
+    font-weight: normal;
+    border: none;
+    padding: 0;
+    color: black;
+    font-weight: bold;
+}
+
+.header__nombreslogan {
+    font-size: 1rem;
+}
+
+/*------------main-------------*/
+
+.main__textoleft {
+
+    font-size: 1rem;
+}
+
+.main__articulo--bottom {
+    padding: .8rem;
+    margin-left: 1.4rem;
+}
+
+.main__articulo {
+    width: 100%;
+}
+
+.main__articulo--resaltado {
+    border: solid black 2px;
+}
+
+.main__articulo--resaltado p {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.main__imagen {
+    width: 100%;
+    text-align: center;
+}
+
+.main__imagen img {
+    border: solid 2px black
+}
+
+/*servicios*/
+
+.main__contenido {
+    width: 100%;
+}
+
+.main__espacio {
+    margin-left: .4rem;
+}
+
+.main__espacio--texto {
+    margin-top: 1rem;
+}
+
+.main__espacio--texto2 {
+    margin-right: 1rem;
+}
+
+.main__imagen3 img {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+/*contacto*/
+
+.contacto__formulario form {
+    left: 3.5rem;
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    margin-left: 16rem;
+}
+
+.contacto__tabla--separacion {
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+    margin-left: 16rem;
+}
+
+.contacto__tabla h3{
+    margin-right: 14rem;
+}
+/*ubicación*/
+
+.main__ubicacion img {
+    width: 100%;
+    margin-left: .2rem;
+    margin-top: .5rem;
+
+}
+
+.main__titulo h2 {
+    text-align: center;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+
+}
+
+.main__imagen2 iframe {
+    width: 100%;
+    height: auto;
+    padding-top: .5rem;
+    margin-left: .2rem;
+    
+}
+
+/*mision - vision */
+
+.main__espacio--texto3 {
+    margin-top: 0rem;
+    margin-right: 1rem;
+}
+
+.main__imagen4 img {
+    width: 100%;
+    margin-top: 1rem;
+
+}
+
+/*--------footer------------*/
+.footer__nombreslogan {
+    display: none;
+}
+
+/* .footer__redes{
+    margin-left: 4rem;
+} */
+
+.footer__navbar li {
+    display: inline-block;
+}
+
+.footer__navbar a {
+    display: none;
+}
+
+.footer {
+    height: 9rem;
+}
+
+
+}
+
+/*--------ipads y pantallas panoramicas----------*/
+
+@media(min-width: 993px){
+
+    /*header*/
+   
+    /* .header {
+       height: 16.5rem;
+   }
+   
+   .header__nav-flex {
+       flex-wrap: wrap;
+   }
+   
+   .main__flex {
+       flex-direction: column;
+   }
+   
+   .header__section-flex {
+       flex-direction: column;
+       align-items: center;
+   }
+   
+   .header__navbar a {
+       font-size: .8rem;
+       font-weight: normal;
+       border: none;
+       padding: 0;
+       color: black;
+       font-weight: bold;
+   }
+   
+   .header__nombreslogan {
+       font-size: 1rem;
+   }
+    */
+   /*------------main-------------*/
+   
+   .main__textoleft {
+   
+       font-size: 1rem;
+   }
+   
+   .main__articulo--bottom {
+       padding: .8rem;
+       margin-left: 1.4rem;
+   }
+   
+   .main__articulo {
+       width: 100%;
+   }
+   
+   .main__articulo--resaltado {
+       border: solid black 2px;
+   }
+   
+   .main__articulo--resaltado p {
+       font-weight: bold;
+       font-size: medium;
+   }
+   
+   .main__imagen {
+       width: 100%;
+       text-align: center;
+   }
+   
+   .main__imagen img {
+       border: solid 2px black
+   }
+   .main__espacio{
+    margin-top: 4rem;
+   }
+   
+   /*servicios*/
+   
+   .main__contenido {
+       width: 100%;
+   }
+   
+   .main__espacio {
+       margin-left: .4rem;
+   }
+   
+   .main__espacio--texto {
+       margin-top: 1rem;
+   }
+   
+   .main__espacio--texto2 {
+       margin-right: 1rem;
+   }
+   
+   .main__imagen3 img {
+       margin-bottom: 1rem;
+       margin-top: 1rem;
+   }
+   
+   /*contacto*/
+   
+   .contacto__formulario form {
+       left: 3.5rem;
+       padding-top: 2rem;
+       padding-bottom: 0rem;
+       margin-left: 16rem;
+       width: 50%;
+   }
+   
+   .contacto__tabla table{
+    width: 75%;
+   }
+   .contacto__tabla--separacion {
+       padding-top: 0rem;
+       padding-bottom: 2rem;
+       margin-left: 16rem;
+   }
+   
+   .contacto__tabla h3{
+       margin-right: 14rem;
+   }
+   /*ubicación*/
+   
+   .main__ubicacion img {
+       width: 100%;
+       margin-left: .2rem;
+       margin-top: .5rem;
+   
+   }
+   
+   .main__titulo h2 {
+       text-align: center;
+       padding-left: .5rem;
+       padding-right: .5rem;
+       padding-bottom: .5rem;
+       padding-top: .5rem;
+   
+   }
+   
+   .main__imagen2 iframe {
+       width: 100%;
+       height: auto;
+       padding-top: .5rem;
+       margin-left: .2rem;
+       
+   }
+   
+   /*mision - vision */
+   
+   .main__espacio--texto3 {
+       margin-top: 5rem;
+       margin-right: 1rem;
+   }
+   
+   .main__imagen4 img {
+       width: 100%;
+       margin-top: 1rem;
+   
+   }
+   
+   /*--------footer------------*/
+   /* .footer__nombreslogan {
+       display: none;
+   }
+   
+   .footer__redes{
+       margin-left: 4rem;
+   }
+   
+   .footer__navbar li {
+       display: inline-block;
+   }
+   
+   .footer__navbar a {
+       display: none;
+   }
+   
+   .footer {
+       height: 9rem;
+   } */
+   
+   
+   }

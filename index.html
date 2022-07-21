@@ -10,60 +10,61 @@
     <!--bloque tipografía google-fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
-    <!--bloque animacion libreria textos-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- CSS only bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!--bloque estilo css-->
     <link rel="stylesheet" href="./CSS/estilos.css">
+
     <title>HOME</title>
 
 </head>
 
-<body class="grid">
+<body class="">
 
 
-    <header class="header gradiente__header">
-        <section class="header__nav-flex">
-            <!--fila menú-->
-            <nav class="header__navbar nav">
-                <ul>
-                    <li class=""><a href="#"> HOME</a></li>
-                    <li><a href="./page/servicios.html"> SERVICIOS</a></li>
-                    <li><a href="./page/contacto.html"> CONTACTO</a></li>
-                    <li><a href="./page/ubicacion.html"> UBICACIÓN</a></li>
-                    <li><a href="./page/Misión y Visión.html#mision"> MISIÓN</a></li>
-                    <li><a href="./page/Misión y Visión.html#vision">VISIÓN</a></li>
-                    <li><a href="./page/Objetivos.html"> OBJETIVOS</a></li>
-                </ul>
-            </nav>
-            <!--Fin fila menú-->
-            <!--fila logo + nombre + sologan-->
-            <section class="header__section-flex ">
+    <header class="header">
 
-                <div class="header__logo rotar__logo ">
-                    <img src="./multimedia/logo.png" alt="logo">
-                </div>
-                <div class="header__nombreslogan ">
-                    <h1 class="animacion"> MOBILE ANIMALS SPA</h1>
-                    <h3 class="animacion"> Salud y belleza animal</h3>
-                </div>
+        <!--fila menú-->
+        <nav class="header__navbar ">
+            <ul class="menu__sup">
+                <li class=""><a href="#"> HOME</a></li>
+                <li><a href="./page/servicios.html"> SERVICIOS</a></li>
+                <li><a href="./page/contacto.html"> CONTACTO</a></li>
+                <li><a href="./page/ubicacion.html"> UBICACIÓN</a></li>
+                <li><a href="./page/Misión y Visión.html#mision"> MISIÓN</a></li>
+                <li><a href="./page/Misión y Visión.html#vision">VISIÓN</a></li>
+                <li><a href="./page/Objetivos.html"> OBJETIVOS</a></li>
+            </ul>
+        </nav>
+        <!--Fin fila menú-->
+        <!--fila logo + nombre + sologan-->
+        <section class="header__section">
 
-            </section>
+            <div class="header__logo">
+                <img src="./multimedia/logo.png" alt="logo">
+            </div>
+            <div class="header__nombreslogan">
+                <h1> MOBILE ANIMALS SPA</h1>
+                <h3> Salud y belleza animal</h3>
+            </div>
+
         </section>
+
         <!--Fin fila logo + nombre + sologan-->
     </header>
 
     <!-------------------------MAIN---------------------->
-    <main class="main main__grid main__flex gradiente__main">
+    <main class="main ">
         <!--Inicio sección quienes somos-->
 
-        <section class="main__articulo main__textoleft ">
-            <section class="main__articulo--separacion ">
-                <article class="main__articulo--resaltado main__articulo--bottom">
+        <section class=" main__section--separación container-fluid">
+            <section class="row">
+                <article class="main__articulo col-lg-2 col-md-4 col-xs-6">
                     <!--bloque titúlo-->
                     <div class="main__titulo">
-                        <h2 class="animate__animated animate__backInDown animate__infinite animate__slower">QUIENES
-                            SOMOS</h2>
+                        <h2>QUIENES SOMOS</h2>
                     </div>
 
                     <!--bloque leyenda-->
@@ -72,25 +73,33 @@
                             caninos
                             y felinos. Prestamos nuestros servicios en las zonas rurales del municipio de Cali desde
                             hace 2
-                            años; ahora también contamos con un equipo de servicios médicos básicos como laboratorio
+                            años;
+                            ahora también contamos con un equipo de servicios médicos básicos como laboratorio
                             móvil,
                             administración de medicamentos y profilaxis para suplir lo mejor posible las necesidades de
                             los
                             animales cuyo traslado a centros veterinarios es difícil debido a su localización.</p>
                     </div>
                 </article>
+                <aside class="main__imagen col-lg-3 col-md-5 col-xs-6">
+
+                    <div>
+                        <img class="img-fluid" src="./multimedia/servicio gen2.jpg" alt="imagen 1">
+                    </div>
+                </aside>
             </section>
+        </section>
 
-            <!--Fin sección quienes somos-->
+        <!--Fin sección quienes somos-->
 
-            <!--Inicio sección historia empresa-->
+        <!--Inicio sección historia empresa-->
 
-            <section class="main__articulo--separacion ">
-                <article class="main__articulo--resaltado main__articulo--bottom">
+        <section class="container-fluid ">
+            <section  class="row">
+                <article class="main__articulo col-lg-2 col-md-4 col-xs-6">
                     <!--bloque titúlo-->
                     <div class="main__titulo">
-                        <h2 class="animate__animated animate__backInDown animate__infinite animate__slower">HISTORIA DE
-                            LA EMPRESA</h2>
+                        <h2>HISTORIA DE LA EMPRESA</h2>
                     </div>
 
                     <!--bloque leyenda-->
@@ -98,19 +107,22 @@
                         <p>La idea de Mobile Animals surgió después de una salida de campo a una zona
                             rural de la ciudad de Cali - Valle del Cauca, al observar el entorno se notaba el
                             insuficiente
-                            servicio en el lugar y sus alrededores, pues por ser zona rural había una alta población de
+                            servicio en el lugar y sus alrededores,
+                            pues por ser zona rural había una alta población de
                             mascotas en las fincas, y en la mayoría de estas usaban técnicas muy dudosas para la salud
                             del
                             animal como aplicarle alcanfor o creolina entre otras.</p>
                         <p> Al hacer un estudio en la zona se
                             determinaron los clientes potenciales y las necesidades existentes de los mismos; entre los
-                            resultados arrojados sorprendió que en las fincas el problema no era económico sino de
-                            tiempo, pues enviar a un animal hasta la zona urbana requería disponer todo un día en ello,
+                            resultados arrojados sorprendió que en las fincas el problema no era económico
+                            sino de tiempo,
+                            pues enviar a un animal hasta la zona urbana requería disponer todo un día en ello,
                             fue así como empezaron a llevar los servicios a esos lugares, inicialmente solo la parte
                             estética. </p>
                         <p>Actualmente la empresa cuenta con 3 vehículos y amplió su portafolio de
                             servicios ofreciendo a sus clientes salud y belleza, laboratorio móvil, profilaxis oral,
-                            administración de medicamentos y vacunación sin la necesidad de trasladar el animal al
+                            administración de medicamentos y vacunación
+                            sin la necesidad de trasladar el animal al
                             centro
                             veterinario.
                             Adicional a esto Mobile Animals ofrece servicio de transporte para una consulta
@@ -120,85 +132,76 @@
                             el tratamiento de su mascota.</p>
                     </div>
                 </article>
-            </section>
-        </section>
-
-        <!--Inicio seccion imagenes-->
-        <section class="main__imagen main__articulo--separacion">
-            <section class="">
-                <aside class="">
-
+                <aside class="main__imagen col-lg-3 col-md-5 col-xs-6">
                     <div>
-                        <img src="./multimedia/servicio gen2.jpg" alt="imagen 1">
-                    </div>
-                </aside>
-
-                <aside class="main_imagen--separación2 ">
-                    <div>
-                        <img src="./multimedia/ser com2.jpg" alt="imagen2">
+                        <img src="./multimedia/mision vet.jpg" alt="imagen2">
                     </div>
                 </aside>
             </section>
         </section>
-
 
         <!--Fin sección historia de la empresa + slider-->
     </main>
 
-    <footer class="footer footer__grid">
+    <footer class="footer">
         <!--fila logo + nombre + slogan + menu inferior + formulario + redes-->
-        <section class="footer__section-flex">
-            <!--bloque logo-->
-            <div class="footer__logo ">
-                <img src="./multimedia/logo.png" alt="logo">
+
+        <!--bloque logo-->
+        <div class="footer__logo">
+            <img src="./multimedia/logo.png" alt="logo">
+        </div>
+
+        <!--bloque nombre + sologan-->
+        <div class="footer__nombreslogan">
+            <h1> MOBILE ANIMALS SPA</h1>
+            <h3> Salud y belleza animal</h3>
+        </div>
+
+        <!--bloque menu inferior-->
+        <nav class="footer__navbar">
+            <ul class="">
+                <li><a href="#"> HOME</a></li>
+                <li><a href="./page/servicios.html"> SERVICIOS</a></li>
+                <li><a href="./page/contacto.html"> CONTACTO</a></li>
+                <li><a href="./page/ubicacion.html"> UBICACIÓN</a></li>
+
+            </ul>
+        </nav>
+
+        <nav class="footer__navbar">
+            <ul class="">
+                <li><a href="./page/Misión y Visión.html#mision"> MISIÓN</a></li>
+                <li><a href="./page/Misión y Visión.html#vision">VISIÓN</a></li>
+                <li><a href="./page/Objetivos.html"> OBJETIVOS</a></li>
+            </ul>
+        </nav>
+        <!--bloque formulario y redes-->
+        <section class="">
+            <!--bloque formulario-->
+            <div class="footer__formulario">
+                <form action="">
+                    <label for="correo">
+                        <h3> Recibe información para el cuidado de tu mascota</h3>
+                    </label><br>
+                    <input type="email" id="correo" name="correo" placeholder="Ingresa tu email" class="boton">
+                    <input type="submit" value="Enviar">
+                </form>
             </div>
 
-            <!--bloque nombre + sologan-->
-            <div class="footer__nombreslogan">
-                <h1> MOBILE ANIMALS SPA</h1>
-                <h3> Salud y belleza animal</h3>
+            <!--bloque redes-->
+            <div class="footer__redes">
+                <a href="#"><img src="./multimedia/facebook.jpg" alt="facebook"></a>
+                <a href="#"><img src="./multimedia/whatpsapp.jpg" alt="whatpsapp"></a>
             </div>
-
-            <!--bloque menu inferior-->
-            <nav class="footer__navbar">
-                <ul class="">
-                    <li><a href="#"> HOME</a></li>
-                    <li><a href="./page/servicios.html"> SERVICIOS</a></li>
-                    <li><a href="./page/contacto.html"> CONTACTO</a></li>
-                    <li><a href="./page/ubicacion.html"> UBICACIÓN</a></li>
-
-                </ul>
-            </nav>
-
-            <nav class="footer__navbar">
-                <ul class="">
-                    <li><a href="./page/Misión y Visión.html#mision"> MISIÓN</a></li>
-                    <li><a href="./page/Misión y Visión.html#vision">VISIÓN</a></li>
-                    <li><a href="./page/Objetivos.html"> OBJETIVOS</a></li>
-                </ul>
-            </nav>
-            <!--bloque formulario y redes-->
-            <section class="">
-                <!--bloque formulario-->
-                <div class="footer__formulario">
-                    <form action="">
-                        <label for="correo"> Recibe información para el cuidado de tu mascota</label><br>
-                        <input type="email" id="correo" name="correo" placeholder="Ingresa tu email" class="boton">
-                        <input type="submit" value="Enviar">
-                    </form>
-                </div>
-
-                <!--bloque redes-->
-                <div class="footer__redes">
-                    <a href="#"><img src="./multimedia/facebook.jpg" alt="facebook"></a>
-                    <a href="#"><img src="./multimedia/whatpsapp.jpg" alt="whatpsapp"></a>
-                </div>
-            </section>
         </section>
 
     </footer>
     <!--Fin fila logo + nombre + slogan + menu inferior + formulario + redes-->
 
+    <!-- JavaScript Bundle with Popper bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
