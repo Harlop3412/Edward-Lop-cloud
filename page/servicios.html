@@ -24,7 +24,7 @@
 
     <header class="header">
         <!--fila menú superior-->
-        <nav class="header__navbar">
+        <!-- <nav class="header__navbar">
             <ul class="menu__sup">
                 <li><a href="../index.html"> HOME</a></li>
                 <li><a href="#"> SERVICIOS</a></li>
@@ -34,6 +34,60 @@
                 <li><a href="./Misión y Visión.html#vision">VISIÓN</a></li>
                 <li><a href="./Objetivos.html"> OBJETIVOS</a></li>
             </ul>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg nav__color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">HOME</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="../page/Misión y Visión.html#mision">MISIÓN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../page/Misión y Visión.html#vision">VISIÓN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../page/ubicacion.html">UBICACIÓN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../page/contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="../page/servicios.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                SERVICIOS
+                            </a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" href="../page/servicios.html#servicio__estelar">Servicios
+                                        Estelares</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../page/servicios.html#servicio__complemetario">Servicios
+                                        Complementarios</a></li>
+                                <li><a class="dropdown-item" href="../page/servicios.html#productos">Productos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                OBJETIVOS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../page/Objetivos.html#objetivo__general">Objetivo
+                                        General</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../page/Objetivos.html#objetivos__especificos">Objetivos Específicos</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <!--Fin fila menú superior-->
 
@@ -59,10 +113,10 @@
         <!--Inicio servicios estelares-->
 
         <section class=" main__section--separación container-fluid">
-            <section class="row">
+            <section class="row align-items-center justify-content-center">
                 <article class="main__articulo col-lg-2 col-md-4 col-xs-6">
                     <!--bloque Titulo-->
-                    <div class="main__titulo ">
+                    <div id="servicio__estelar" class="main__titulo ">
                         <h2>SERVICIO ESTELAR</h2>
                     </div>
 
@@ -81,7 +135,7 @@
                     </div>
                 </article>
                 <!--imagen servicio estelar-->
-                <aside class="col-lg-3 col-md-5 col-xs-6">
+                <aside class="col-lg-3 col-md-10 col-xs-6">
                     <div class="main__imagen ">
                         <img class="img-fluid" src="../multimedia/portada1.jpg" alt="servicio estelar">
                     </div>
@@ -93,11 +147,11 @@
         <!--Inicio servicios Complementario -->
 
         <section class="container-fluid">
-            <section class="row">
+            <section class="row align-items-center justify-content-center">
 
                 <!--bloque Titulo-->
                 <article class="main__articulo col-lg-2 col-md-4 col-xs-6">
-                    <div class="main__titulo">
+                    <div id="servicio__complementario" class="main__titulo">
                         <h2>SERVICIOS COMPLEMENTARIOS</h2>
                     </div>
                     <!--bloque lista servicios complementarios-->
@@ -116,9 +170,9 @@
                         </ul>
                     </div>
                 </article>
-                <aside class="col-lg-3 col-md-5 col-xs-6">
+                <aside class="col-lg-3 col-md-10 col-xs-6">
                     <!--imagen servicio complementario-->
-                    <div class="main__imagen" >
+                    <div class="main__imagen">
                         <img class="img-fluid" src="../multimedia/ser com1.jpg" alt="servicios complementarios">
                     </div>
                 </aside>
@@ -127,35 +181,35 @@
         <!--Fin servicios Complementario -->
 
         <!--Inicio seccion productos-->
-        <div class="main__ubicacion-flex main__titulo ">
+        <div id="productos" class="main__ubicacion-flex main__titulo ">
             <h2>NUESTROS PRODUCTOS</h2>
         </div>
         <section class="">
             <div class="container-fluid">
-                <div class="row">
-                    <div class=" col-lg-2 col-md-4 col-xs-6">
+                <div class="row align-items-center justify-content-center">
+                    <div class=" col-lg-2 col-md-4 col-sm-6">
                         <img class="img-fluid" src="../multimedia/galeria/bano-seco.jpg" alt="bano-seco">
                         <h3>Baño Seco</h3>
                     </div>
-                    <div class=" col-lg-2 col-md-4 col-xs-6">
+                    <div class=" col-lg-2 col-md-4 col-sm-6">
                         <img class="img-fluid" src="../multimedia/galeria/bebedero-portatil-para-mascotas.jpg"
                             alt="bebedero-portatil">
                         <h3>Bebedero Portatil</h3>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-xs-6">
+                    <div class="col-lg-2 col-md-4 col-sm-6">
                         <img class="img-fluid" src="../multimedia/galeria/bozal-en-caucho.jpg" alt="bozal-en-caucho">
                         <h3>Bozal Caucho</h3>
                     </div>
-                    <div class=" col-lg-2 col-md-4 col-xs-6">
+                    <div class=" col-lg-2 col-md-4 col-sm-6">
                         <img class="img-fluid" src="../multimedia/galeria/corta-unas.png" alt="corta-unas">
                         <h3>Corta Uñas</h3>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-xs-6">
+                    <div class="col-lg-2 col-md-4 col-sm-6">
                         <img class="img-fluid" src="../multimedia/galeria/gafas-para-perros-dog-glasses.jpg"
                             alt="gafas-perro">
                         <h3>Gafas para Perro</h3>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-xs-6">
+                    <div class="col-lg-2 col-md-4 col-sm-6">
                         <img class="img-fluid" src="../multimedia/galeria/gimnasios-gato.jpg" alt="gimnasios-gato">
                         <h3>Gimnasios para Gatos</h3>
                     </div>
@@ -163,29 +217,29 @@
             </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-2 col-md-4 col-xs-6">
+                    <div class="col-lg-2 col-md-4 col-sm-6">
                         <img src="../multimedia/galeria/guacal gatos.jpg" alt="guacal" class="img-fluid">
                         <h3>Guacal Gatos</h3>
                     </div>
 
-                    <div class="col-lg-2 col-md-4 col-xs-6">
+                    <div class="col-lg-2 col-md-4 col-sm-6">
                         <img src="../multimedia/galeria/guante-quita-pelo.jpg" alt="guante" class="img-fluid">
                         <h3>Guante Quitapelo</h3>
                     </div>
-                    <div class=" col-lg-2 col-md-4 col-xs-6">
+                    <div class=" col-lg-2 col-md-4 col-sm-6">
                         <img src="../multimedia/galeria/juguete-rascador-sonoro-para-gatos.jpg" alt="rascador-sonoro"
                             class="img-fluid">
                         <h3>Rascador Sonoro</h3>
                     </div>
-                    <div class=" col-lg-2 col-md-4 col-xs-6">
+                    <div class=" col-lg-2 col-md-4 col-sm-6">
                         <img class="img-fluid" src="../multimedia/galeria/panoleta-friends.jpg" alt="panoleta-perros">
                         <h3>Pañoleta Perros</h3>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-xs-6">
+                    <div class="col-lg-2 col-md-4 col-sm-6">
                         <img class="img-fluid" src="../multimedia/galeria/platos-dobles.jpg" alt="platos">
                         <h3>Platos Dobles</h3>
                     </div>
-                    <div class=" col-lg-2 col-md-4 col-xs-6">
+                    <div class=" col-lg-2 col-md-4 col-sm-6">
                         <img class="img-fluid" src="../multimedia/galeria/repelente-de-orina.jpg" alt="repelente-orina">
                         <h3>Repelente de Orina</h3>
                     </div>
