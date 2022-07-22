@@ -27,7 +27,7 @@
     <header class="header">
 
         <!--fila menú-->
-        <nav class="header__navbar ">
+        <!-- <nav class="header__navbar ">
             <ul class="menu__sup">
                 <li class=""><a href="#"> HOME</a></li>
                 <li><a href="./page/servicios.html"> SERVICIOS</a></li>
@@ -37,6 +37,54 @@
                 <li><a href="./page/Misión y Visión.html#vision">VISIÓN</a></li>
                 <li><a href="./page/Objetivos.html"> OBJETIVOS</a></li>
             </ul>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg nav__color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">HOME</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="./page/Misión y Visión.html#mision">MISIÓN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./page/Misión y Visión.html#vision">VISIÓN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./page/ubicacion.html">UBICACIÓN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./page/contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="./page/servicios.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                SERVICIOS
+                            </a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" href="./page/servicios.html#servicio__estelar">Servicios Estelares</a></li>
+                                <li><a class="dropdown-item" href="./page/servicios.html#servicio__complemetario">Servicios Complementarios</a></li>
+                                <li><a class="dropdown-item" href="./page/servicios.html#productos">Productos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                OBJETIVOS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./page/Objetivos.html#objetivo__general">Objetivo General</a></li>
+                                <li><a class="dropdown-item" href="./page/Objetivos.html#objetivos__especificos">Objetivos Específicos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <!--Fin fila menú-->
         <!--fila logo + nombre + sologan-->
@@ -59,8 +107,8 @@
     <main class="main ">
         <!--Inicio sección quienes somos-->
 
-        <section class=" main__section--separación container-fluid">
-            <section class="row">
+        <section class=" main__section--separación container-fluid ">
+            <section class="row align-items-center justify-content-center">
                 <article class="main__articulo col-lg-2 col-md-4 col-xs-6">
                     <!--bloque titúlo-->
                     <div class="main__titulo">
@@ -81,7 +129,7 @@
                             animales cuyo traslado a centros veterinarios es difícil debido a su localización.</p>
                     </div>
                 </article>
-                <aside class="main__imagen col-lg-3 col-md-5 col-xs-6">
+                <aside class="main__imagen col-lg-3 col-md-10 col-xs-6">
 
                     <div>
                         <img class="img-fluid" src="./multimedia/servicio gen2.jpg" alt="imagen 1">
@@ -95,7 +143,7 @@
         <!--Inicio sección historia empresa-->
 
         <section class="container-fluid ">
-            <section  class="row">
+            <section class="row align-items-center justify-content-center">
                 <article class="main__articulo col-lg-2 col-md-4 col-xs-6">
                     <!--bloque titúlo-->
                     <div class="main__titulo">
@@ -132,7 +180,7 @@
                             el tratamiento de su mascota.</p>
                     </div>
                 </article>
-                <aside class="main__imagen col-lg-3 col-md-5 col-xs-6">
+                <aside class="main__imagen col-lg-3 col-md-10 col-xs-6">
                     <div>
                         <img src="./multimedia/mision vet.jpg" alt="imagen2">
                     </div>

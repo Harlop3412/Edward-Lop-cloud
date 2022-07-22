@@ -92,6 +92,11 @@ img {
 .header__nombreslogan {
     text-align: center;
 }
+/*nav bootstrap*/
+
+.nav__color{
+    background-color: var(--primary);
+}
 
 /*------------main---------------*/
 

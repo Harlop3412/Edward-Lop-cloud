@@ -23,7 +23,7 @@
 
     <header class="header">
         <!--fila menú superior-->
-        <nav class="header__navbar">
+        <!-- <nav class="header__navbar">
             <ul class="menu__sup">
                 <li><a href="../index.html"> HOME</a></li>
                 <li><a href="./servicios.html"> SERVICIOS</a></li>
@@ -33,6 +33,60 @@
                 <li><a href="#vision">VISIÓN</a></li>
                 <li><a href="./Objetivos.html"> OBJETIVOS</a></li>
             </ul>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg nav__color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">HOME</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="../page/Misión y Visión.html#mision">MISIÓN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../page/Misión y Visión.html#vision">VISIÓN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../page/ubicacion.html">UBICACIÓN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../page/contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="../page/servicios.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                SERVICIOS
+                            </a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" href="../page/servicios.html#servicio__estelar">Servicios
+                                        Estelares</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../page/servicios.html#servicio__complemetario">Servicios
+                                        Complementarios</a></li>
+                                <li><a class="dropdown-item" href="../page/servicios.html#productos">Productos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                OBJETIVOS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../page/Objetivos.html#objetivo__general">Objetivo
+                                        General</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../page/Objetivos.html#objetivos__especificos">Objetivos Específicos</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <!--Fin fila menú-->
         <!--fila logo + nombre + sologan-->
@@ -58,7 +112,7 @@
 
         <!--Fila misión + imagen-->
         <section class=" main__section--separación container-fluid">
-            <section class="row">
+            <section class="row align-items-center justify-content-center">
                 <article class="main__articulo col-lg-2 col-md-4 col-xs-6">
                     <!--Fila titulo-->
                     <div class="main__titulo">
@@ -79,7 +133,7 @@
                     </div>
                 </article>
                 <!--bloque imagen misión-->
-                <aside class="col-lg-3 col-md-5 col-xs-6">
+                <aside class="col-lg-3 col-md-10 col-xs-6">
                     <div class="main__imagen">
                         <img class="img-fluid" src="../multimedia/ser com2.jpg" alt="mision">
                     </div>
@@ -90,7 +144,7 @@
 
         <!--Fila visión + imagen-->
         <section class="container-fluid">
-            <section class="row">
+            <section class="row align-items-center justify-content-center">
                 <article class="main__articulo col-lg-2 col-md-4 col-xs-6">
                     <!--Fila titulo-->
                     <div class="main__titulo">
@@ -110,7 +164,7 @@
                     </div>
                 </article>
                 <!--bloque imagen visión-->
-                <aside class="col-lg-3 col-md-5 col-xs-6">
+                <aside class="col-lg-3 col-md-10 col-xs-6">
                     <div class="main__imagen">
                         <img  class="img-fluid" src="../multimedia/flotacarros.jpg" alt="vision">
                     </div>
