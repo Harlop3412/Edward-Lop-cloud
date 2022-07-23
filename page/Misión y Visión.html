@@ -14,6 +14,8 @@
     <!-- CSS only bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--bloque animacion libreria textos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--bloque estilo css-->
     <link rel="stylesheet" href="../CSS/estilos.css">
     <title>Misión y Visión</title>
@@ -58,8 +60,8 @@
                             <a class="nav-link active" href="../page/contacto.html">CONTACTO</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="../page/servicios.html" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle active" href="../page/servicios.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 SERVICIOS
                             </a>
                             <ul class="dropdown-menu ">
@@ -93,14 +95,14 @@
         <section class="header__section">
 
             <!--fila logo -->
-            <div class="header__logo">
+            <div class="header__logo rotar__logo">
                 <a href="../index.html"><img src="../multimedia/logo.png" alt="logo"></a>
             </div>
 
             <!--fila nombre + slogan -->
             <div class="header__nombreslogan">
-                <h1> MOBILE ANIMALS SPA</h1>
-                <h3> Salud y belleza animal</h3>
+                <h1 class="animacion"> MOBILE ANIMALS SPA</h1>
+                <h3 class="animacion"> Salud y belleza animal</h3>
             </div>
 
         </section>
@@ -108,7 +110,7 @@
     </header>
 
 
-    <main class="main">
+    <main class="main gradiente__main">
 
         <!--Fila misión + imagen-->
         <section class=" main__section--separación container-fluid">
@@ -116,7 +118,7 @@
                 <article class="main__articulo col-lg-2 col-md-4 col-xs-6">
                     <!--Fila titulo-->
                     <div class="main__titulo">
-                        <h2 id="mision">MISIÓN</h2>
+                        <h2 id="mision" class="animate__animated animate__backInDown animate__infinite animate__slower">MISIÓN</h2>
                     </div>
 
                     <!--bloque misión-->
@@ -148,7 +150,7 @@
                 <article class="main__articulo col-lg-2 col-md-4 col-xs-6">
                     <!--Fila titulo-->
                     <div class="main__titulo">
-                        <h2 id="vision">VISIÓN</h2>
+                        <h2 id="vision" class="animate__animated animate__backInDown animate__infinite animate__slower">VISIÓN</h2>
                     </div>
 
                     <!--bloque visión-->
@@ -166,7 +168,7 @@
                 <!--bloque imagen visión-->
                 <aside class="col-lg-3 col-md-10 col-xs-6">
                     <div class="main__imagen">
-                        <img  class="img-fluid" src="../multimedia/flotacarros.jpg" alt="vision">
+                        <img class="img-fluid" src="../multimedia/flotacarros.jpg" alt="vision">
                     </div>
                 </aside>
             </section>
@@ -180,7 +182,7 @@
 
 
         <!--bloque logo-->
-        <div class="footer__logo">
+        <div class="footer__logo rotar__logo">
             <a href="../index.html"><img src="../multimedia/logo.png" alt="logo"></a>
             </td>
         </div>
