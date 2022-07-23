@@ -92,6 +92,7 @@ img {
 .header__nombreslogan {
     text-align: center;
 }
+
 /*nav bootstrap*/
 
 .nav__color{
@@ -306,6 +307,66 @@ td {
     margin-top: var(--space-xxsmall);
 }
 
+/*---gradientes - transforaciones---*/
+
+.gradiente__main{
+    background-image: radial-gradient( blue, rgb(11, 197, 243), rgb(176, 241, 241) );
+}
+
+.gradiente__form{
+    background-image: radial-gradient( rgb(8, 159, 143),rgb(100, 201, 135),rgb(42, 72, 88),rgb(57, 180, 142));
+}
+
+.rotar__logo{
+    transform: skew(0deg,0deg);
+}
+
+.rotar__logo img:hover{
+    transform: skew(10deg,10deg);
+}
+
+.boton:hover{
+    border: dotted 5px blue ;
+}
+
+/*----animaciones-manual--*/
+
+.animacion{
+    color: black;
+    /* --font-size: 2rem; -- */
+    /*nombre*/
+    animation-name: nombre-slogan;
+    /*veces a ejecutar*/
+    animation-iteration-count: infinite;
+    /*duracion*/
+    animation-duration: 8s;
+    /*tiempo que hasta que carga*/
+    animation-delay: 6s;
+}
+@keyframes nombre-slogan {
+    0%{
+        color: black;
+        font-size: 2rem;
+    }
+    25%{
+        color: blue;
+        transform: rotate(30deg);
+        /* --font-size: 2.5rem;-- */
+    }
+    50%{
+        color: white;
+        transform: rotate(-30deg);
+        /* --font-size: 3rem;-- */
+    }
+    75%{
+        color: cornflowerblue;
+        /*-- font-size: 2.5rem;-- */
+    }
+    100%{
+        color: black;
+        /*-- font-size: 2rem; --*/
+    }
+}
 
 /*-----responsive-----*/
 

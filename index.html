@@ -14,6 +14,8 @@
     <!-- CSS only bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--bloque animacion libreria textos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--bloque estilo css-->
     <link rel="stylesheet" href="./CSS/estilos.css">
 
@@ -62,13 +64,16 @@
                             <a class="nav-link active" href="./page/contacto.html">CONTACTO</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="./page/servicios.html" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle active" href="./page/servicios.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 SERVICIOS
                             </a>
                             <ul class="dropdown-menu ">
-                                <li><a class="dropdown-item" href="./page/servicios.html#servicio__estelar">Servicios Estelares</a></li>
-                                <li><a class="dropdown-item" href="./page/servicios.html#servicio__complemetario">Servicios Complementarios</a></li>
+                                <li><a class="dropdown-item" href="./page/servicios.html#servicio__estelar">Servicios
+                                        Estelares</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./page/servicios.html#servicio__complemetario">Servicios
+                                        Complementarios</a></li>
                                 <li><a class="dropdown-item" href="./page/servicios.html#productos">Productos</a></li>
                             </ul>
                         </li>
@@ -78,8 +83,11 @@
                                 OBJETIVOS
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./page/Objetivos.html#objetivo__general">Objetivo General</a></li>
-                                <li><a class="dropdown-item" href="./page/Objetivos.html#objetivos__especificos">Objetivos Específicos</a></li>
+                                <li><a class="dropdown-item" href="./page/Objetivos.html#objetivo__general">Objetivo
+                                        General</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./page/Objetivos.html#objetivos__especificos">Objetivos Específicos</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -90,12 +98,12 @@
         <!--fila logo + nombre + sologan-->
         <section class="header__section">
 
-            <div class="header__logo">
+            <div class="header__logo rotar__logo">
                 <img src="./multimedia/logo.png" alt="logo">
             </div>
             <div class="header__nombreslogan">
-                <h1> MOBILE ANIMALS SPA</h1>
-                <h3> Salud y belleza animal</h3>
+                <h1 class="animacion"> MOBILE ANIMALS SPA</h1>
+                <h3 class="animacion"> Salud y belleza animal</h3>
             </div>
 
         </section>
@@ -104,15 +112,48 @@
     </header>
 
     <!-------------------------MAIN---------------------->
-    <main class="main ">
-        <!--Inicio sección quienes somos-->
+    <main class="main gradiente__main">
 
+        <!-- slider de bootstrap-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./multimedia/slider/slider_1.jpg" class="d-block w-100" alt="img1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./multimedia/slider/slider_2.jpg" class="d-block w-100" alt="img2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./multimedia/slider/slider_3.jpg" class="d-block w-100" alt="img3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!--Inicio sección quienes somos-->
         <section class=" main__section--separación container-fluid ">
             <section class="row align-items-center justify-content-center">
                 <article class="main__articulo col-lg-2 col-md-4 col-xs-6">
                     <!--bloque titúlo-->
                     <div class="main__titulo">
-                        <h2>QUIENES SOMOS</h2>
+                        <h2 class="animate__animated animate__backInDown animate__infinite animate__slower">QUIENES SOMOS</h2>
                     </div>
 
                     <!--bloque leyenda-->
@@ -147,7 +188,7 @@
                 <article class="main__articulo col-lg-2 col-md-4 col-xs-6">
                     <!--bloque titúlo-->
                     <div class="main__titulo">
-                        <h2>HISTORIA DE LA EMPRESA</h2>
+                        <h2 class="animate__animated animate__backInDown animate__infinite animate__slower">HISTORIA DE LA EMPRESA</h2>
                     </div>
 
                     <!--bloque leyenda-->
@@ -195,7 +236,7 @@
         <!--fila logo + nombre + slogan + menu inferior + formulario + redes-->
 
         <!--bloque logo-->
-        <div class="footer__logo">
+        <div class="footer__logo rotar__logo">
             <img src="./multimedia/logo.png" alt="logo">
         </div>
 
