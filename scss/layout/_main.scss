@@ -1,0 +1,42 @@
+/*------------main---------------*/
+
+.main {
+    max-width: 1350px;
+    margin: 0 auto;
+    margin-top: $space-xxsmall;
+    margin-bottom: $space-xxsmall;
+    background-color: $alternate;
+
+    &__section--separación {
+        margin-bottom: $space-medium;
+        padding-top: $space-xxsmall;
+    }
+
+    &__articulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: $space-small;
+        font-size: $text-base;
+        margin: $space-small $space-ssmall;
+        width: 70%;
+
+        & h3 {
+            margin-bottom: $space-xsmall;
+            text-align: center;
+        }
+
+        & p {
+            text-align: justify;
+            margin: $space-xsmall 0;
+        }
+    }
+
+    &__imagen {
+        margin-top: $space-medium;
+        margin-bottom: $space-small;
+    }
+
+
+}

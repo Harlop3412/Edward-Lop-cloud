@@ -1,0 +1,38 @@
+/*----------footer--------*/
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1350px;
+    margin: 0 auto;
+    background-color: $secondary;
+    padding: $space-xxsmall 0;
+
+    &__nombreslogan {
+        text-align: center;
+    }
+
+    &__navbar {
+
+        & ul {
+            list-style-type: none;
+        }
+
+        & a {
+            text-decoration: none;
+            text-transform: lowercase;
+            color: $text-color;
+            font-size: $text-medium;
+            font-weight: bold;
+        }
+    }
+
+    &__redes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: $space-xxsmall;
+        column-gap: $space-medium;
+    }
+}

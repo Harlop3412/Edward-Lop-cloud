@@ -1,0 +1,17 @@
+/*ubicacion*/
+
+.main__ubicacion-flex {
+    display: flex;
+    flex-direction: column;
+
+    &__ubicacion {
+        margin: 0 $space-xxsmall;
+    }
+
+    & h2 {
+        text-align: center;
+        margin: $space-small 0;
+        font-size: $text-medium;
+    }
+}
+

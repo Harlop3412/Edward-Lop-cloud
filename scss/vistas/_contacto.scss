@@ -1,0 +1,52 @@
+/*contacto*/
+
+.main__contacto-flex {
+    display: flex;
+    gap: var $space-small;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1 1 clamp(600px, 40%, 500px);
+    font-size: $text-base;
+
+
+}
+
+.contacto__formulario {
+    margin: $space-small 0;
+
+    & h2{
+        text-align: center;
+        color: $text-color;
+        font-weight: 600;
+    }
+
+    & fieldset {
+        border: solid $text-color 3px;
+    }
+}
+
+.contacto__tabla-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h3 {
+        margin: $space-small 0;
+    }
+
+    & th {
+        border: $text-color 3px solid;
+        text-align: center;
+        padding: $space-xsmall;
+    }
+
+    & td {
+        border: $text-color 3px solid;
+        text-align: center;
+        padding: $space-xxsmall;
+    }
+}
+
+
+
+
