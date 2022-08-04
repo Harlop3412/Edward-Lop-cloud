@@ -1,5 +1,14 @@
-.container-fluid h3{
+.productos__h3 h3{
     text-align: center;
     color: $text-color;
     font-size: $text-medium;
+    font-weight:bold;
 }
+
+.productos__img img{
+    border: solid 5px $border-primary;
+    text-align: center;
+    width: 100%;
+    
+}
+

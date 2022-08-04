@@ -65,7 +65,7 @@ html {
 
 /*nav bootstrap*/
 .nav__color {
-  background-color: var(#54C3F0); }
+  background-color: #54C3F0; }
 
 /*------------main---------------*/
 .main {
@@ -155,7 +155,7 @@ html {
 
 .contacto__formulario {
   margin: 2rem 0; }
-  .contacto__formulario h2 {
+  .contacto__formulario h1 {
     text-align: center;
     color: #243C59;
     font-weight: 600; }
@@ -181,10 +181,16 @@ html {
 .main__lista li {
   margin: 0.5rem 0; }
 
-.container-fluid h3 {
+.productos__h3 h3, .productos__h3--destacado h3 h3 {
   text-align: center;
   color: #243C59;
-  font-size: 2em; }
+  font-size: 2em;
+  font-weight: bold; }
+
+.productos__img img, .productos__img--destacado img img {
+  border: solid 5px #079FB3;
+  text-align: center;
+  width: 100%; }
 
 /*ubicacion*/
 .main__ubicacion-flex {
@@ -192,10 +198,42 @@ html {
   flex-direction: column; }
   .main__ubicacion-flex__ubicacion {
     margin: 0 0.5rem; }
-  .main__ubicacion-flex h2 {
+  .main__ubicacion-flex h1 {
     text-align: center;
     margin: 2rem 0;
     font-size: 2em; }
+
+/* map = lista de elementos*/
+/*each - if*/
+.borde-destacado1 {
+  border-image: url("../multimedia/galeria/gafas-para-perros-dog-glasses.jpg");
+  border: solid blue 5px; }
+
+.borde-destacado2 {
+  border-image: url("../multimedia/galeria/bebedero-portatil-para-mascotas.jpg");
+  border: solid lightblue 3px; }
+
+.borde-destacado3 {
+  border-image: url("../multimedia/galeria/panoleta-friends.jpg");
+  border: solid lightblue 3px; }
+
+/*extend -seccion servicios*/
+.productos__h3--destacado h3 {
+  color: #18A326; }
+
+.productos__img--destacado img {
+  border: dashed 8px #09B361; }
+
+/*mixin seccion footer*/
+.footer {
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.footer__redes {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
 
 /*utilidades - mediaqueries*/
 /*-----responsive-----*/
