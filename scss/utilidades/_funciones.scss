@@ -1,0 +1,48 @@
+/* map = lista de elementos*/
+$destacado: (
+    destacado1: url('../multimedia/galeria/gafas-para-perros-dog-glasses.jpg'),
+    destacado2: url('../multimedia/galeria/bebedero-portatil-para-mascotas.jpg'),
+    destacado3: url('../multimedia/galeria/panoleta-friends.jpg'),
+);
+
+/*each - if*/
+@each $name,
+$url in $destacado {
+    .borde-#{$name} {
+        border-image: #{$url};
+
+        @if($name =="destacado1") {
+            border: solid blue 5px;
+        }
+
+        @else {
+            border: solid lightblue 3px;
+        }
+    }
+}
+
+/*extend -seccion servicios*/
+.productos__h3--destacado h3{
+    @extend .productos__h3;
+    color:$text-color3;
+}
+
+.productos__img--destacado img{
+    @extend .productos__img;
+    border: dashed 8px $border-destacado ;
+}
+
+/*mixin seccion footer*/
+@mixin flexbox ($flex-direction, $justify, $aling) {
+    flex-direction: $flex-direction;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+.footer{
+    @include flexbox(row, space-evenly, center)
+}
+
+.footer__redes{
+    @include flexbox(row, center, center )
+}
