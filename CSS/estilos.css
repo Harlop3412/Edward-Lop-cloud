@@ -27,7 +27,7 @@ html {
   margin: 0 auto;
   padding: 1rem 0;
   background-color: #54C3F0;
-  background-image: url(../../multimedia/fondo-header.jpg);
+  background-image: url(../multimedia/fondo-header.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto; }
@@ -97,7 +97,7 @@ html {
 /*---gradientes - transforaciones---*/
 .gradiente__main {
   background-image: radial-gradient(blue, #0bc5f3, #b0f1f1);
-  background-image: url(../../multimedia/fondo-main.jpg);
+  background-image: url(../multimedia/fondo-main.jpg);
   background-attachment: fixed;
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -105,7 +105,7 @@ html {
 
 .gradiente__form {
   background-image: radial-gradient(#089f8f, #64c987, #2a4858, #39b48e);
-  background-image: url(../../multimedia/fondo-form.jpg);
+  background-image: url(../multimedia/fondo-form.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -272,7 +272,7 @@ html {
   margin: 0 auto;
   background-color: #5791D9;
   padding: 0.5rem 0;
-  background-image: url(../../multimedia/fondo-footer.jpg);
+  background-image: url(../multimedia/fondo-footer.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
