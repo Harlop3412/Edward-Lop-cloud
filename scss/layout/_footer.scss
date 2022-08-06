@@ -13,6 +13,7 @@
 
     &__nombreslogan {
         text-align: center;
+        font-weight: bold;
     }
 
     &__navbar {
@@ -24,14 +25,15 @@
         & a {
             text-decoration: none;
             text-transform: lowercase;
-            color: $text-color2;
+            color: $alternate;
             font-size: $text-medium;
             font-weight: bold;
         }
     }
 
     &__formulario h3{
-        color: $alternate2;
+        color: $alternate;
+        background-color: $text-color;
         text-align: center;
         font-weight: bold;
     }

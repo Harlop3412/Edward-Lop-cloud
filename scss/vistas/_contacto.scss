@@ -18,11 +18,13 @@
         text-align: center;
         color: $text-color2;
         font-weight: 600;
-        background-color: $secondary;
+        background-color: $menu-media;
     }
 
     & fieldset {
         border: solid $text-color 3px;
+        text-align: center;
+        padding: $space-ssmall 0;
     }
 }
 
@@ -35,7 +37,7 @@
         margin: $space-small 0;
         color: $text-color2;
         font-weight: bold;
-        background-color: $secondary;
+        background-color: $menu-media;
     }
 
     & th {
