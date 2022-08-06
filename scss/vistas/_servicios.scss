@@ -13,9 +13,14 @@
 
 }
 
+.productos__img img:hover{
+    border: double 6px $text-color3;
+}
+
 #productos h1 {
     color: $text-color2 ;
     font-weight: bold;
-    background-color: $secondary;
+    background-color: $menu-media;
     text-align: center;
 }
+
