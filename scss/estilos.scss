@@ -4,7 +4,7 @@
 /*base = reset, tipografias*/ 
 @import "base/reset";
 /*layout*/
-@import "layout/footer";
+
 @import "layout/header";
 @import "layout/main";
 /*componentes*/
@@ -17,6 +17,7 @@
 @import "vistas/ubicacion";
 
 @import"utilidades/funciones";
+@import "layout/footer";
 /*utilidades - mediaqueries*/
 @import"utilidades/mediaqueries";
 

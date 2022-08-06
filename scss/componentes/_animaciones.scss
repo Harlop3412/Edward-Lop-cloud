@@ -2,10 +2,19 @@
 
 .gradiente__main{
     background-image: radial-gradient( blue, rgb(11, 197, 243), rgb(176, 241, 241) );
+    background-image: url(../../multimedia/fondo-main.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .gradiente__form{
     background-image: radial-gradient( rgb(8, 159, 143),rgb(100, 201, 135),rgb(42, 72, 88),rgb(57, 180, 142));
+    background-image: url(../../multimedia/fondo-form.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .rotar__logo{
@@ -16,7 +25,9 @@
     }
 }
 
-
+.footer__navbar a:hover{
+    background-color: $alternate2;
+}
 
 .boton:hover{
     border: dotted 5px blue ;
@@ -32,31 +43,27 @@
     /*veces a ejecutar*/
     animation-iteration-count: infinite;
     /*duracion*/
-    animation-duration: 8s;
+    animation-duration: 12s;
     /*tiempo que hasta que carga*/
-    animation-delay: 6s;
+    animation-delay: 1s;
 }
 @keyframes nombre-slogan {
     0%{
-        color: black;
-        // font-size: 2rem;
+        color: #5ECAE0;
+
     }
     25%{
-        color: blue;
-        transform: rotate(30deg);
-        /* --font-size: 2.5rem;-- */
+        color: #1613E0;
+       
     }
     50%{
-        color: white;
-        transform: rotate(-30deg);
-        /* --font-size: 3rem;-- */
+        color:#68E0A0;
+       
     }
     75%{
-        color: cornflowerblue;
-        /*-- font-size: 2.5rem;-- */
+        color: #27A0E0;
     }
     100%{
-        color: black;
-        /*-- font-size: 2rem; --*/
+        color:  #5ECAE0;
     }
 }

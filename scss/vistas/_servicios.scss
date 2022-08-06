@@ -1,14 +1,21 @@
-.productos__h3 h3{
+.productos__h3 h3 {
     text-align: center;
     color: $text-color;
     font-size: $text-medium;
-    font-weight:bold;
+    font-weight: bold;
+    background-color: $secondary;
 }
 
-.productos__img img{
+.productos__img img {
     border: solid 5px $border-primary;
     text-align: center;
     width: 100%;
-    
+
 }
 
+#productos h1 {
+    color: $text-color2 ;
+    font-weight: bold;
+    background-color: $secondary;
+    text-align: center;
+}

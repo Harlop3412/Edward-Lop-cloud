@@ -9,6 +9,11 @@
         flex-direction: column;
     }
 
+    .navbar{
+        position: fixed;
+        z-index: 1;
+        background-color: $menu-media;
+    }
     /*-----------main-----------------*/
 
     .main__section-flex {
@@ -64,6 +69,11 @@
         flex-direction: column;
     }
 
+    .navbar{
+        position: fixed;
+        z-index: 1;
+        background-color: $menu-media;
+    }
     /*-----------main-----------------*/
 
     .main__section-flex {
@@ -118,6 +128,11 @@
         flex-direction: column;
     }
 
+    .navbar{
+        position: fixed;
+        z-index: 1;
+        background-color: $menu-media;
+    }
     /*-----------main-----------------*/
 
     .main__section-flex {
@@ -168,6 +183,11 @@
         display: flex;
     }
 
+    .navbar{
+        position: fixed;
+        z-index: 1;
+        background-color: $menu-media;
+    }
     /*-----------main-----------------*/
 
     .main__section-flex {
