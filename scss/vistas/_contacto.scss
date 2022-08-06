@@ -16,8 +16,9 @@
 
     & h1{
         text-align: center;
-        color: $text-color;
+        color: $text-color2;
         font-weight: 600;
+        background-color: $secondary;
     }
 
     & fieldset {
@@ -32,6 +33,9 @@
 
     & h3 {
         margin: $space-small 0;
+        color: $text-color2;
+        font-weight: bold;
+        background-color: $secondary;
     }
 
     & th {
@@ -44,6 +48,8 @@
         border: $text-color 3px solid;
         text-align: center;
         padding: $space-xxsmall;
+        color: $text-color3;
+        font-weight: bold;
     }
 }
 

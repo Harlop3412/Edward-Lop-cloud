@@ -6,6 +6,11 @@
     margin: 0 auto;
     padding: $space-xsmall 0;
     background-color: $primary;
+    background-image: url(../../multimedia/fondo-header.jpg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:auto;
+    
 
     &__section {
         display: flex;
@@ -27,5 +32,11 @@
 /*nav bootstrap*/
 
 .nav__color {
-    background-color: $primary;
+    background-color: none;
+    & a{
+        color: $text-color2;
+        font-weight: bold;
+        font-size: $text-small;
+    }
 }
+ 

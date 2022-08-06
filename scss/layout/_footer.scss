@@ -1,13 +1,15 @@
 /*----------footer--------*/
 
 .footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex(row, space-evenly, center);
     max-width: 1350px;
     margin: 0 auto;
     background-color: $secondary;
     padding: $space-xxsmall 0;
+    background-image: url(../../multimedia/fondo-footer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     &__nombreslogan {
         text-align: center;
@@ -22,16 +24,24 @@
         & a {
             text-decoration: none;
             text-transform: lowercase;
-            color: $text-color;
+            color: $text-color2;
             font-size: $text-medium;
             font-weight: bold;
         }
     }
 
+    &__formulario h3{
+        color: $alternate2;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    &__formulario form{
+        text-align: center;
+    }
+
     &__redes {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, center, center);
         margin-top: $space-xxsmall;
         column-gap: $space-medium;
     }

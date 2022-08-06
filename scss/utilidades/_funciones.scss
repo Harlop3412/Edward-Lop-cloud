@@ -1,8 +1,8 @@
 /* map = lista de elementos*/
 $destacado: (
-    destacado1: url('../multimedia/galeria/gafas-para-perros-dog-glasses.jpg'),
-    destacado2: url('../multimedia/galeria/bebedero-portatil-para-mascotas.jpg'),
-    destacado3: url('../multimedia/galeria/panoleta-friends.jpg'),
+    destacado1: url('multimedia/galeria/gafas-para-perros-dog-glasses.jpg'),
+    destacado2: url('multimedia/galeria/guacal-gatos.jpg'),
+    destacado3: url('multimedia/galeria/panoleta-friends.jpg'),
 );
 
 /*each - if*/
@@ -22,27 +22,28 @@ $url in $destacado {
 }
 
 /*extend -seccion servicios*/
-.productos__h3--destacado h3{
+.productos__h3--destacado h3 {
     @extend .productos__h3;
-    color:$text-color3;
+    color: $text-color3;
 }
 
-.productos__img--destacado img{
+.productos__img--destacado img {
     @extend .productos__img;
     border: dashed 8px $border-destacado ;
 }
 
 /*mixin seccion footer*/
-@mixin flexbox ($flex-direction, $justify, $aling) {
-    flex-direction: $flex-direction;
+@mixin flex ($direction, $justify, $aling) {
+    display: flex;
+    flex-direction: $direction;
     justify-content: $justify;
     align-items: $aling;
 }
 
-.footer{
-    @include flexbox(row, space-evenly, center)
+.footer {
+    @include flex(row, space-evenly, center)
 }
 
-.footer__redes{
-    @include flexbox(row, center, center )
+.footer__redes {
+    @include flex(row, center, center)
 }
