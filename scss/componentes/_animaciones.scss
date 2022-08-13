@@ -3,7 +3,7 @@
 .gradiente__main{
     background-image: url(../multimedia/fondo-main.jpg);
     background-attachment: fixed;
-    background-position: bottom center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -24,7 +24,8 @@
 }
 
 .footer__navbar a:hover{
-    background-color: $text-color;
+    color: $text-color3;
+    background-color: $alternate2;
 }
 
 .boton:hover{
@@ -35,7 +36,7 @@
 
 .animacion{
     color: black;
-    /* --font-size: 2rem; -- */
+    font-size: $text-large; 
     /*nombre*/
     animation-name: nombre-slogan;
     /*veces a ejecutar*/
@@ -47,7 +48,7 @@
 }
 @keyframes nombre-slogan {
     0%{
-        color: #5ECAE0;
+        color: #993900;
 
     }
     25%{
@@ -55,13 +56,13 @@
        
     }
     50%{
-        color:#68E0A0;
+        color:#F51106;
        
     }
     75%{
-        color: #27A0E0;
+        color: #AB1FF5;
     }
     100%{
-        color:  #5ECAE0;
+        color:  #197DFF;
     }
 }

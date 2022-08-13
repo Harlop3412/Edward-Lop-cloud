@@ -2,10 +2,10 @@
 .header {
     display: flex;
     flex-direction: column;
-    max-width: 1350px;
+    max-width: 100%;
     margin: 0 auto;
     padding: $space-xsmall 0;
-    background-color: $primary;
+    background-color: $menu-media;
     background-image: url(../multimedia/fondo-header.jpg);
     background-position:center;
     background-repeat:no-repeat;
@@ -27,6 +27,8 @@
     &__nombreslogan {
         text-align: center;
         font-weight: bold;
+        background-color: $menu-media;
+        opacity: 0.7;
     }
 }
 
@@ -40,4 +42,8 @@
         font-size: $text-small;
     }
 }
+.nav__color a:hover{
+    background-color: $alternate2;
+    color: $text-color2;
+} 
  

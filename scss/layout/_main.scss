@@ -1,7 +1,7 @@
 /*------------main---------------*/
 
 .main {
-    max-width: 1350px;
+    max-width: 100%;
     margin: 0 auto;
     margin-top: $space-xxsmall;
     margin-bottom: $space-xxsmall;
@@ -22,14 +22,14 @@
         width: 70%;
 
         & h1 {
-            color:$text-color2 ;
+            color: $text-color2 ;
             font-weight: bold;
             background-color: $menu-media;
             text-align: center;
         }
 
-        & h2{
-            color:$text-color2 ;
+        & h2 {
+            color: $text-color2 ;
             font-weight: bold;
             background-color: $menu-media;
             text-align: center;
@@ -39,7 +39,9 @@
             margin-bottom: $space-xsmall;
             text-align: center;
             color: $text-color3;
+            background-color: $menu-media;
             font-weight: bold;
+            opacity: 0.79;
         }
 
         & p {
@@ -47,6 +49,8 @@
             margin: $space-xsmall 0;
             color: $text-color2;
             font-weight: bold;
+            background-color: $menu-media;
+            opacity: 0.79;
         }
 
     }
