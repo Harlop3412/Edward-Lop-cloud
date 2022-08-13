@@ -8,13 +8,14 @@
         margin: 0 $space-xxsmall;
     }
 
-    & h1 {
+    & h2 {
         text-align: center;
         margin: $space-small 0;
         font-size: $text-medium;
         color: $text-color2;
         font-weight: bold;
+        background-color: $menu-media;
+        opacity: 0.79;
     }
 
 }
-
