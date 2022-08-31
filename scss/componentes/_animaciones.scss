@@ -32,6 +32,17 @@
     border: dotted 5px blue ;
 }
 
+.btn__productos{
+    font-size: $text-medium;
+    font-weight: bold;
+    color: $text-color;
+}
+
+.btn__form{
+    @extend .btn__productos;
+    font-size: $text-small;
+}
+
 /*----animaciones-manual--*/
 
 .animacion{

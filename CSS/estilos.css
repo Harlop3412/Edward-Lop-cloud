@@ -129,6 +129,14 @@ html {
 .boton:hover {
   border: dotted 5px blue; }
 
+.btn__productos, .btn__form {
+  font-size: 2em;
+  font-weight: bold;
+  color: #243C59; }
+
+.btn__form {
+  font-size: 1.4em; }
+
 /*----animaciones-manual--*/
 .animacion {
   color: black;
@@ -215,7 +223,8 @@ html {
   color: #243C59;
   font-size: 2em;
   font-weight: bold;
-  background-color: #5791D9; }
+  background-color: #5791D9;
+  margin-top: 0.5rem; }
 
 .productos__img img, .productos__img--destacado img img {
   border: solid 5px #079FB3;
@@ -312,7 +321,8 @@ html {
     text-align: center;
     font-weight: bold; }
   .footer__formulario form {
-    text-align: center; }
+    text-align: center;
+    font-size: 1.9em; }
   .footer__redes {
     display: flex;
     flex-direction: row;
@@ -443,3 +453,7 @@ html {
       display: none; }
   .footer__redes {
     justify-content: space-evenly; } }
+
+@media screen and (min-width: 993px) {
+  .main__carousel {
+    height: 500px; } }
