@@ -10,11 +10,14 @@
     border: solid 5px $border-primary;
     text-align: center;
     width: 100%;
-
 }
 
 .productos__img img:hover{
     border: double 6px $text-color3;
+}
+
+.borde__redondeado{
+    border-radius: 25% 40%;
 }
 
 #productos h2 {

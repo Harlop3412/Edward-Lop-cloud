@@ -225,6 +225,9 @@ html {
 .productos__img img:hover, .productos__img--destacado img img:hover {
   border: double 6px #CC0000; }
 
+.borde__redondeado {
+  border-radius: 25% 40%; }
+
 #productos h2 {
   color: #0D39FA;
   font-weight: bold;
