@@ -31,7 +31,7 @@
         & h2 {
             color: $text-color2 ;
             font-weight: bold;
-            background-color: $menu-media;
+            background-color: $text-fon;
             text-align: center;
         }
 
@@ -39,9 +39,9 @@
             margin-bottom: $space-xsmall;
             text-align: center;
             color: $text-color3;
-            background-color: $menu-media;
+            background-color: $text-fon;
             font-weight: bold;
-            opacity: 0.79;
+            opacity: 1;
         }
 
         & p {
@@ -49,8 +49,8 @@
             margin: $space-xsmall 0;
             color: $text-color2;
             font-weight: bold;
-            background-color: $menu-media;
-            opacity: 0.79;
+            background-color: $text-fon;
+            opacity: 1;
         }
 
     }

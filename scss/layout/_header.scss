@@ -37,13 +37,14 @@
 .nav__color {
     background-color: none;
     & a{
+        background-color: $menu-media;
         color: $text-color2;
         font-weight: bold;
         font-size: $text-small;
+        margin-right: $space-ssmall;
     }
 }
 .nav__color a:hover{
     background-color: $alternate2;
     color: $text-color2;
 } 
- 
