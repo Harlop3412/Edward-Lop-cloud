@@ -48,9 +48,11 @@ html {
 .nav__color {
   background-color: none; }
   .nav__color a {
+    background-color: Beige;
     color: #0D39FA;
     font-weight: bold;
-    font-size: 1.4em; }
+    font-size: 1.4em;
+    margin-right: 1.5rem; }
 
 .nav__color a:hover {
   background-color: #9CBADF;
@@ -82,22 +84,22 @@ html {
     .main__articulo h2 {
       color: #0D39FA;
       font-weight: bold;
-      background-color: Beige;
+      background-color: white;
       text-align: center; }
     .main__articulo h3 {
       margin-bottom: 1rem;
       text-align: center;
       color: #CC0000;
-      background-color: Beige;
+      background-color: white;
       font-weight: bold;
-      opacity: 0.79; }
+      opacity: 1; }
     .main__articulo p {
       text-align: justify;
       margin: 1rem 0;
       color: #0D39FA;
       font-weight: bold;
-      background-color: Beige;
-      opacity: 0.79; }
+      background-color: white;
+      opacity: 1; }
   .main__imagen {
     margin-top: 2.4rem;
     margin-bottom: 2rem; }
@@ -105,7 +107,7 @@ html {
 /*componentes*/
 /*---gradientes - transforaciones---*/
 .gradiente__main {
-  background-image: url(../multimedia/fondo-main.jpg);
+  background-image: url(../multimedia/fondo-form.jpg);
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -178,8 +180,8 @@ html {
     text-align: center;
     color: #0D39FA;
     font-weight: 600;
-    background-color: Beige;
-    opacity: 0.7; }
+    background-color: white;
+    opacity: 1; }
   .contacto__formulario fieldset {
     border: solid #243C59 3px;
     text-align: center;
@@ -193,30 +195,30 @@ html {
     margin: 2rem 0;
     color: #0D39FA;
     font-weight: bold;
-    background-color: Beige;
-    opacity: 0.7; }
+    background-color: white;
+    opacity: 1; }
   .contacto__tabla-flex th {
     border: #243C59 3px solid;
     text-align: center;
     padding: 1rem;
-    background-color: Beige;
-    opacity: 0.66; }
+    background-color: white;
+    opacity: 1; }
   .contacto__tabla-flex td {
     border: #243C59 3px solid;
     text-align: center;
     padding: 0.5rem;
     color: #CC0000;
     font-weight: bold;
-    background-color: Beige;
-    opacity: 0.5; }
+    background-color: white;
+    opacity: 1; }
 
 /*objetivos - servicios*/
 .main__lista li {
   margin: 0.5rem 0;
   color: #0D39FA;
   font-weight: bold;
-  background-color: Beige;
-  opacity: 0.79; }
+  background-color: white;
+  opacity: 1; }
 
 .productos__h3 h3, .productos__h3--destacado h3 h3 {
   text-align: center;
@@ -240,7 +242,7 @@ html {
 #productos h2 {
   color: #0D39FA;
   font-weight: bold;
-  background-color: Beige;
+  background-color: white;
   text-align: center; }
 
 /*ubicacion*/
@@ -255,8 +257,8 @@ html {
     font-size: 2em;
     color: #0D39FA;
     font-weight: bold;
-    background-color: Beige;
-    opacity: 0.79; }
+    background-color: white;
+    opacity: 1; }
 
 /* map = lista de elementos*/
 /*each - if*/
